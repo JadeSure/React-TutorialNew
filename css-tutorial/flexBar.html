@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        ul{
+            background-color: pink;
+            display: flex;
+            /* justify-content: space-around; */
+           
+        }
+
+        ul > li {
+            list-style-type: none;
+        }
+
+        a {
+            color: #808080;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .nav {
+            width: 1210px;
+            height: 48px;
+            margin: 50px auto;
+            line-height: 48px;
+            font-size: 16px;
+        }
+
+        .nav li{
+            flex-grow: 1;
+        }
+
+        .nav li:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="">HTML/CSS</a></li>
+        <li><a href="">Browser Side</a></li>
+        <li><a href="">Server Side</a></li>
+        <li><a href="">Programming</a></li>
+        <li><a href="">Reference</a></li>
+    </ul>
+    
+</body>
+</html>

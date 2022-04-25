@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        color: rgba(197, 196, 197)
+    }
+}
+
+img{
+    width: 20px;
+}
+
+.top-bar{
+    max-width: 1200px;
+    margin: 0 auto;
+    height:48px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    justify-content: space-between;
+}
+
+
+.left-menu{
+    &:hover{
+        .nav{
+            display: block;
+            transition: 2s;
+        }
+
+    }
+
+    .nav{
+        display: none;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color:green;
+        padding-top: 80px;
+        li{
+            width:80%;
+            margin: 0 auto;
+            border-bottom: 1px solid #dbdbdb;
+
+            a{
+                display: block;
+                line-height: 44px;
+                font-size: 14px;
+              
+            }
+            &:last-child a{
+                display: inline-block;
+            }
+        }
+
+        
+    }
+    .menu-icon{
+        width:18px;
+        height:48px;
+        position: relative;
+        
+        li{
+            width: 18px;
+            padding: 0;
+            position: absolute;
+            background-color:#fff;
+            height:1px;
+            transform-origin: left center;
+            transition: 2s;
+        }
+
+        li:nth-child(1){
+            top: 18px;
+            // transform: rotate(40deg);
+        }
+        li:nth-child(2){
+            bottom: 24px;
+            // opacity: 0;
+        }
+        li:nth-child(3){
+            bottom: 18px;
+            // transform: rotate(-40deg);
+        }
+
+        &:hover{
+            li:nth-child(1){
+                top: 18px;
+                transform: rotate(40deg);
+            }
+            li:nth-child(2){
+                bottom: 24px;
+                opacity: 0;
+            }
+            li:nth-child(3){
+                bottom: 18px;
+                transform: rotate(-40deg);
+            }
+        }
+    }
+}
+
+@media only screen{
+    @media (min-width: 768px){
+       .log{
+            order: 1;
+       }
+       .left-menu{
+        order: 2;
+        flex-grow: 1;
+        .nav{
+            display: block;
+            position: static;
+            display: flex;
+            padding: 0;
+            li{
+                width: auto;
+                a{
+                    line-height: 48px;
+                }
+                span{
+                    display: none;
+                }
+            }
+        }
+        .menu-icon{
+            display: none;
+        }
+        
+    }
+       .user-info{
+        order: 3
+       }
+    }
+}

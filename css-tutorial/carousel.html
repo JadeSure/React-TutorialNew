@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/carousel.css">
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        .img-list {
+            width: 590px;
+            height: 470px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .img-list li{
+            position: absolute;
+        }
+
+        .pointer {
+            position: absolute;
+            z-index: 999;
+            bottom: 20px;
+        }
+
+        .pointer a{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color:rgba(255, 255, 255, .6);
+            border-radius: 20px;
+            margin: 0 4px;
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+
+        .pointer a.active {
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 1, .6);
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href=""><img src="./img/gift1.jpeg" alt=""></a></li>
+        <li><a href=""><img src="./img/gift2.jpeg" alt=""></a></li>
+        <li><a href=""><img src="./img/gift3.jpeg" alt=""></a></li>
+        <li><a href=""><img src="./img/gift4.jpeg" alt=""></a></li>
+        <li><a href=""><img src="./img/wine.jpeg" alt=""></a></li>
+
+        <div class="pointer">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+</body>
+</html>

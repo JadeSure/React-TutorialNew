@@ -1,0 +1,1 @@
+{"version":3,"file":"main.e36ff8875d89266bf253.css","mappings":";;;AAAA;IACI,sBAAsB;AAC1B,C","sources":["webpack://webpacktutorial/./src/index.css"],"sourcesContent":["div{\n    background-color: pink;\n}"],"names":[],"sourceRoot":""}

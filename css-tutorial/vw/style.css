@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w,
+.top-bar,
+.banner,
+.menu,
+.course-list {
+  width: 18.25rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 4.83091787vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+.top-bar img {
+  width: 2rem;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 4.375rem;
+  align-items: center;
+}
+.top-bar a {
+  color: #24253d;
+  font-size: 50px;
+}
+.banner img {
+  width: 100%;
+}
+.menu {
+  height: 8.225rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+.menu a {
+  width: 8.175rem;
+  height: 2.6rem;
+  color: white;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 2.6rem;
+}
+.menu .course {
+  background-color: #f97053;
+}
+.menu .star {
+  background-color: #cd6efe;
+}
+.menu .sub {
+  background-color: #f97053;
+}
+.menu .download {
+  background-color: #1bc4fb;
+}
+.course-list {
+  height: 14.75rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin-bottom: 1.15rem;
+}
+.course-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-list .title h2 {
+  border-left: 2px solid #3a84ff;
+  padding-left: 4px;
+}
+.course-list .title a {
+  color: #656565;
+}
+.course-list .item-list {
+  margin-top: 5px;
+  display: flex;
+  overflow: auto;
+  width: 20rem;
+}
+.course-list .item-list .item {
+  width: 8.75rem;
+  height: 11.25rem;
+  background-color: #f97053;
+  border-radius: 10px;
+  padding: 0.55rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-right: 0.6rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.course-list .item-list .item .course-title {
+  font-size: 0.8rem;
+}
+.course-list .item-list .item .cover img {
+  width: 100%;
+}
+.course-list .item-list .item .user-info {
+  display: flex;
+  align-items: center;
+}
+.course-list .item-list .item .user-info img {
+  width: 1rem;
+  color: pink;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=./style.css.map */
